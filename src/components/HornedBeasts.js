@@ -20,7 +20,7 @@ handleClick = () => {
       <h1>{this.props.title}</h1>
       <img onClick={this.handleClick} src={this.props.img} title={this.props.title} alt="Test" ></img>
       <p>{this.props.description}</p>
-      <p>{this.state.clicks}</p>
+      <p>❣ {this.state.clicks}</p>
       </>
     );
   }
