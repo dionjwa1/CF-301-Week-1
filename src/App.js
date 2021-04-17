@@ -12,19 +12,25 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hornedBeasts: null
+      hornedBeasts: null,
+      showModal: false
     };
   }
+
 uiUpdate = (hornedBeast) =>{
   console.log(hornedBeast);
-  this.setState({hornedBeast});
+  this.setState({hornedBeast,showModal:true});
 } 
+  
+onHide = () => {this.setState({showModal:false});
+console.log("onHide");
+}
 
   render() {
     return (
       <>
 
-      {this.state.hornedBeast && <SelectedBeast /> }
+      {this.state.showModal && <SelectedBeast title={this.state.hornedBeast.title} description={this.state.hornedBeast.description} imgUrl={this.state.hornedBeast.image_url} showModal={this.state.showModal} onHide={this.onHide}/> }
 
         <Header />
         <Main uiUpdate= {this.uiUpdate}/>

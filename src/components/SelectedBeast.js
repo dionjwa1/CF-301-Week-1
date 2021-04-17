@@ -3,21 +3,23 @@ import React from 'react';
 
 class SelectedBeast extends React.Component {
 
+
   render() {
 
     return (
       <>
 
-        <Modal.Dialog>
+        <Modal show={this.props.showModal} onHide={this.props.onHide}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal title</Modal.Title>
+            <Modal.Title>{this.props.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p>Modal body text goes here.</p>
+          <img src={this.props.imgUrl} title={this.props.title} alt="Test" ></img>
+            <p>{this.props.description}</p>
           </Modal.Body>
           <Modal.Footer>
           </Modal.Footer>
-        </Modal.Dialog>
+        </Modal>
 
       </>)
   }
