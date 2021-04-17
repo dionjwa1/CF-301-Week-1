@@ -73,6 +73,6 @@ Estimate of time needed to complete: 3 hours
 
 Start time: 1500
 
-Finish time: _____
+Finish time: 1100 Apr 17
 
 Actual time needed to complete: _____
