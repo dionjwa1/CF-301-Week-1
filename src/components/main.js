@@ -13,14 +13,14 @@ class Main extends React.Component {
   }
 
   render() {
-    console.log(this.state.pics[0]);
+    // console.log(this.state.pics[0]);
     return (
       <>
 
         {
           this.state.pics.map((pic) => {
             return (
-              <Card>
+              <Card onClick={() => { this.props.uiUpdate(pic)}}>
                 <HornedBeasts img={pic.image_url} />
               </Card>
             )
