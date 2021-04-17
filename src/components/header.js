@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <h1>Yowza!</h1>
+    <h1>Horned Beasts!</h1>
   );
 }
 

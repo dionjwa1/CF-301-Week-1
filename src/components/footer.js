@@ -1,6 +1,8 @@
 function Footer() {
   return (
-    <h1>Coming Soon, Too Test</h1> 
+    <>
+    Dion's Magical Creation Center
+    </>
   );
 }
 
