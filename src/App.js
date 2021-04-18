@@ -45,7 +45,6 @@ console.log("onHide");
             height="30"
             className="d-inline-block align-top"
           />{' '}
-      React Bootstrap
     </Navbar.Brand>
       </Navbar>
     </>
