@@ -14,15 +14,19 @@ class Main extends React.Component {
     };
   }
 
+  getFilteredList = (filteredArray) =>{
+    this.setState({pics: filteredArray});
+  } 
+
   render() {
-    // console.log(this.state.pics[0]);
+    console.log(this.state);
     return (
       <>
-        <Forms />
+        <Forms array={this.state.pics} getFilter={this.getFilteredList}/>
         {
-          this.state.pics.map((pic) => {
+          this.state.pics.map((pic, index) => {
             return (
-              <Card onClick={() => { this.props.uiUpdate(pic) }}>
+              <Card key={index} onClick={() => { this.props.uiUpdate(pic) }}>
                 <HornedBeasts img={pic.image_url} />
               </Card>
             )
