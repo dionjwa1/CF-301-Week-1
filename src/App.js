@@ -5,7 +5,7 @@ import Main from './components/main.js';
 import SelectedBeast from './components/SelectedBeast.js';
 import Footer from './components/footer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, CardColumns, Card, Navbar } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 class App extends React.Component {
 

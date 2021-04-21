@@ -1,7 +1,7 @@
 import React from 'react';
 import HornedBeasts from "./HornedBeasts.js";
 import Images from '../assets/data.json';
-import { Card, CardColumns } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import Forms from './forms.js';
 
 class Main extends React.Component {
